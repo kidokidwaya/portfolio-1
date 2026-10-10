@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Banyan Gardens Estate | Concept design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EEF1EA;--ink:#0C1A13;--mut:#55655B;--cd:#fff;--ln:rgba(12,26,19,.12);--lime:#CDF564;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#09110C;--ink:#E8EFE6;--mut:#8FA397;--cd:#111C15;--ln:rgba(232,239,230,.14)}}
+:root[data-theme="dark"]{--bg:#09110C;--ink:#E8EFE6;--mut:#8FA397;--cd:#111C15;--ln:rgba(232,239,230,.14)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.6 Figtree,system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:Unbounded,Figtree,system-ui,sans-serif;font-weight:500;letter-spacing:-.03em;line-height:1.05;margin:0}
+h1{font-size:clamp(2.5rem,9vw,5.6rem)}h2{font-size:clamp(1.9rem,5.5vw,3.4rem)}h3{font-size:1.2rem}
+a{color:inherit}p{margin:0}
+:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+.note{background:var(--lime);color:#0C1A13;font-size:.82rem;font-weight:600;text-align:center;padding:.5rem 1rem}
+.navw{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-content:center;padding:calc(12px + env(safe-area-inset-top,0px)) 12px 0;pointer-events:none}
+.nav{pointer-events:auto;display:flex;align-items:center;gap:1.1rem;background:rgba(10,18,12,.6);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);border:1px solid rgba(232,239,230,.16);color:#E8EFE6;border-radius:999px;padding:.4rem .4rem .4rem 1.1rem;font-weight:500;font-size:.9rem}
+.nav .brand{font:600 .95rem Unbounded,sans-serif;text-decoration:none}
+.mn nav a{text-decoration:none;opacity:.7}.mn nav a[aria-current="page"]{opacity:1}
+.btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--lime);color:#0C1A13;font:600 .95rem Figtree,sans-serif;text-decoration:none;padding:.75rem 1.3rem;border-radius:999px;border:0;cursor:pointer;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.g{background:transparent;color:inherit;border:1px solid rgba(232,239,230,.3)}
+.btn.dk{background:var(--ink);color:var(--bg)}
+.pad{padding-left:clamp(1.25rem,5vw,4rem);padding-right:clamp(1.25rem,5vw,4rem)}
+.w{max-width:72rem;margin:0 auto}
+section{padding-top:clamp(3.5rem,9vw,6.5rem)}
+.hero{position:relative;overflow:hidden;min-height:100svh;background:#08100B;color:#E8EFE6;display:flex;flex-direction:column;justify-content:flex-end;--mx:70%;--my:30%}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(520px circle at var(--mx) var(--my),rgba(205,245,100,.22),transparent 60%)}
+.art{position:absolute;right:0;bottom:0;width:min(100%,760px);height:auto;opacity:.95}
+.art path{fill:none;stroke:url(#lg);stroke-width:1.4;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.8s cubic-bezier(.4,0,.2,1) forwards}
+.art path:nth-of-type(2){animation-delay:.3s}.art path:nth-of-type(3){animation-delay:.6s}.art path:nth-of-type(4){animation-delay:.9s}
+@keyframes draw{to{stroke-dashoffset:0}}
+.hc{position:relative;z-index:2;padding-top:8rem;padding-bottom:2rem}
+.tag{display:inline-block;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--lime);margin-bottom:1.2rem}
+.gt{background:linear-gradient(100deg,#CDF564,#7FE3B8);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hc p.s{max-width:28rem;color:#B6C6B8;font-size:1.12rem;margin:1.4rem 0 1.8rem}
+.row{display:flex;flex-wrap:wrap;gap:.7rem}
+.bar{position:relative;z-index:2;display:grid;grid-template-columns:repeat(auto-fit,minmax(8rem,1fr));gap:1px;margin-bottom:clamp(1rem,3vw,2rem);border:1px solid rgba(232,239,230,.16);border-radius:24px;background:rgba(232,239,230,.16);overflow:hidden;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.bar div{background:rgba(8,16,11,.7);padding:1.1rem 1.3rem}
+.bar b{display:block;font:500 1.9rem Unbounded,sans-serif}
+.bar span{font-size:.85rem;color:#9DB09F}
+.mq{background:var(--lime);color:#0C1A13;overflow:hidden;padding:1rem 0;transform:rotate(-1.2deg);margin:2.5rem -2% 0}
+.mq div{display:flex;width:max-content;gap:2rem;animation:sl 30s linear infinite;font:500 1.15rem Unbounded,sans-serif;white-space:nowrap}
+@keyframes sl{to{transform:translateX(-50%)}}
+.hd{margin-bottom:2rem;max-width:34rem}.hd p{color:var(--mut);margin-top:1rem}
+.bento{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
+.t{background:var(--cd);border:1px solid var(--ln);border-radius:28px;padding:1.6rem;min-height:15rem;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;position:relative;transition:transform .25s}
+.t:hover{transform:translateY(-5px)}
+.t p{color:var(--mut);margin-top:.5rem;font-size:.95rem}
+.w2{grid-column:span 2}
+@media (max-width:620px){.w2{grid-column:auto}}
+.t.dk{background:#0C1A13;color:#E8EFE6}.t.dk p{color:#9DB09F}
+.t.lm{background:var(--lime);color:#0C1A13;border-color:var(--lime)}.t.lm p{color:#33441F}
+.rings{position:absolute;right:-30px;top:-30px;width:170px;height:170px;border-radius:50%;border:1px solid rgba(205,245,100,.5);box-shadow:0 0 0 24px rgba(205,245,100,.12),0 0 0 48px rgba(205,245,100,.07);animation:pl 3.5s ease-in-out infinite}
+@keyframes pl{50%{transform:scale(1.08)}}
+.homes{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:1rem;scrollbar-width:thin}
+.hm{flex:0 0 min(86%,22rem);scroll-snap-align:start;background:var(--cd);border:1px solid var(--ln);border-radius:28px;padding:1rem 1rem 1.6rem}
+.hm .im{background:#0C1A13;border-radius:20px;padding:1.2rem;margin-bottom:1.2rem}
+.hm svg{width:100%;height:auto;display:block;fill:none;stroke:var(--lime);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.hm h3,.hm p{padding:0 .6rem}.hm p{color:var(--mut);margin:.5rem 0 1rem;font-size:.95rem}
+.chip{display:inline-block;font-size:.8rem;font-weight:500;padding:.25rem .7rem;border:1px solid var(--ln);border-radius:999px;margin:0 .3rem .4rem .6rem}
+.life{background:#0C1A13;color:#E8EFE6;margin-top:clamp(3.5rem,9vw,6.5rem);padding-bottom:clamp(3rem,8vw,5rem)}
+.life .hd p{color:#9DB09F}
+.ll a{display:flex;justify-content:space-between;align-items:center;padding:1.3rem 0;border-top:1px solid rgba(232,239,230,.16);text-decoration:none;font:500 clamp(1.4rem,4.5vw,2.4rem) Unbounded,sans-serif;transition:padding .25s,color .25s}
+.ll a:last-child{border-bottom:1px solid rgba(232,239,230,.16)}
+.ll a:hover{padding-left:1rem;color:var(--lime)}
+.ll small{font:400 .9rem Figtree,sans-serif;color:#9DB09F;max-width:14rem;text-align:right}
+.tl{position:relative;padding-left:2.2rem;max-width:44rem}
+.tl::before{content:"";position:absolute;left:.55rem;top:.5rem;bottom:.5rem;width:2px;background:var(--ln)}
+.tl div{position:relative;padding-bottom:2rem}
+.tl div::before{content:"";position:absolute;left:-2.05rem;top:.35rem;width:.9rem;height:.9rem;border-radius:50%;background:var(--lime);border:2px solid var(--ink)}
+.tl p{color:var(--mut);margin-top:.4rem}
+.qs{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr))}
+blockquote{margin:0;background:var(--cd);border:1px solid var(--ln);border-radius:28px;padding:1.8rem}
+blockquote::before{content:"\201C";display:block;font:600 4rem/.6 Unbounded,sans-serif;color:var(--lime);-webkit-text-stroke:1px var(--ink);margin-bottom:1rem}
+blockquote cite{display:block;margin-top:1.2rem;font-style:normal;color:var(--mut);font-size:.9rem}
+details{border-top:1px solid var(--ln);padding:1.2rem 0}
+details:last-of-type{border-bottom:1px solid var(--ln)}
+summary{cursor:pointer;font:500 1.1rem Unbounded,sans-serif;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";transition:transform .3s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin-top:.7rem;color:var(--mut);max-width:38rem}
+.cta{background:var(--lime);color:#0C1A13;border-radius:40px;padding:clamp(2.5rem,8vw,5rem) clamp(1.5rem,5vw,4rem);position:relative;overflow:hidden}
+.cta h2{max-width:14ch;margin-bottom:1.8rem}
+.cta::after{content:"";position:absolute;right:-60px;bottom:-60px;width:260px;height:260px;border-radius:999px 999px 0 0;background:#0C1A13;opacity:.9}
+.cta .btn{background:#0C1A13;color:#E8EFE6;position:relative;z-index:1}
+footer{margin-top:clamp(3.5rem,9vw,6rem);padding-top:2rem;padding-bottom:2.5rem;border-top:1px solid var(--ln);color:var(--mut);font-size:.9rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.sub{padding-top:7.5rem}.sub h1{font-size:clamp(2.4rem,8vw,4.6rem);margin-bottom:1rem}.sub .lead{color:var(--mut);max-width:30rem;margin-bottom:2.5rem}
+.hr{display:grid;gap:1.5rem;grid-template-columns:minmax(0,18rem) 1fr;align-items:center;background:var(--cd);border:1px solid var(--ln);border-radius:28px;padding:1rem;margin-bottom:1rem}
+@media (max-width:640px){.hr{grid-template-columns:1fr}}
+.hr .im{background:#0C1A13;border-radius:20px;padding:1.2rem}
+.hr svg{width:100%;height:auto;display:block;fill:none;stroke:var(--lime);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.hr div:last-child{padding:.4rem .8rem 1rem}.hr p{color:var(--mut);margin:.5rem 0 1rem}
+.bk{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));align-items:start}
+.bk form,.info{background:var(--cd);border:1px solid var(--ln);border-radius:28px;padding:1.6rem}
+.info h3{margin-bottom:1rem}.info p{color:var(--mut);margin-bottom:.8rem}
+label{display:block;font-weight:600;margin:1rem 0 .3rem;font-size:.92rem}label:first-child{margin-top:0}
+input,select,textarea{width:100%;font:inherit;font-size:1rem;color:var(--ink);background:transparent;border:1px solid var(--ln);border-radius:14px;padding:.8rem 1rem}
+option{color:#0C1A13}
+#sent{margin-top:1rem;padding:1rem;border-radius:14px;background:var(--cd);border:1px solid var(--ln)}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.art path{animation:none;stroke-dashoffset:0}.mq div,.rings{animation:none}}
+
+.tb{position:sticky;top:0;z-index:30;display:flex;justify-content:space-between;align-items:center;padding:calc(.8rem + env(safe-area-inset-top,0px)) clamp(1.25rem,5vw,4rem) .8rem;background:rgba(8,16,11,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:#E8EFE6;border-bottom:1px solid rgba(232,239,230,.12)}
+.tb .brand,.mn .brand{font:600 .78rem Unbounded,sans-serif;letter-spacing:.14em;text-decoration:none}
+.mb{background:none;border:1px solid rgba(232,239,230,.3);color:inherit;font:600 .9rem Figtree,sans-serif;padding:.5rem 1.1rem;border-radius:999px;cursor:pointer}
+.mn{position:fixed;inset:0;z-index:40;background:var(--lime);color:#0C1A13;display:flex;flex-direction:column;justify-content:space-between;padding:calc(1rem + env(safe-area-inset-top,0px)) clamp(1.25rem,5vw,4rem) calc(1.5rem + env(safe-area-inset-bottom,0px))}
+.mn .mt{display:flex;justify-content:space-between;align-items:center}.mn .mb{border-color:#0C1A13}
+.mn nav a{display:flex;align-items:baseline;gap:1rem;font:600 clamp(2.6rem,12vw,6.5rem)/1.1 Unbounded,sans-serif;letter-spacing:-.04em;text-decoration:none;padding:.25rem 0}
+.mn nav a[aria-current="page"]{text-decoration:underline;text-decoration-thickness:4px}
+.mn nav small{font:500 .9rem Figtree,sans-serif;letter-spacing:0}
+.mn p{font-size:.9rem}
+.hero{min-height:calc(100svh - 56px)}.hc{padding-top:3.5rem}.sub{padding-top:3rem}
+.feat{display:grid;grid-template-columns:1fr 1.3fr;gap:3rem}
+.stick{position:sticky;top:6rem}
+.fi{padding:2rem 0;border-top:1px solid var(--ln);transition:padding .3s}
+.fi:last-child{border-bottom:1px solid var(--ln)}.fi:hover{padding-left:1rem}
+.fi small{font:500 .85rem Unbounded,sans-serif;color:var(--mut)}
+.fi h3{font-size:clamp(1.6rem,4vw,2.6rem);margin:.6rem 0}.fi p{color:var(--mut);max-width:24rem}
+.qs{display:grid;gap:1rem;grid-template-columns:1.3fr 1fr}
+.qs blockquote:first-child{grid-row:span 2;display:flex;flex-direction:column;justify-content:space-between;background:var(--ink);color:var(--bg);font:500 clamp(1.3rem,3.2vw,2rem)/1.25 Unbounded,sans-serif}
+.qs blockquote:first-child::before{-webkit-text-stroke:0}
+.qs blockquote:first-child cite{color:inherit;opacity:.7;font-family:Figtree,sans-serif;font-weight:400}
+.ft{display:block;padding-bottom:1.5rem}
+.wm{font:600 clamp(3.2rem,19vw,14rem)/.85 Unbounded,sans-serif;letter-spacing:-.05em;color:transparent;-webkit-text-stroke:1.5px var(--ln);margin-bottom:1.6rem;overflow:hidden}
+.fr2{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+@media (max-width:760px){.feat,.qs{grid-template-columns:1fr;gap:1.6rem}.stick{position:static}.qs blockquote:first-child{grid-row:auto}}
+</style>
+</head>
+<body>
+<div class="note">Concept design for a fictional estate. Name, numbers, homes, and reviews are samples.</div>
+<header class="tb"><a class="brand" href="#home">BANYAN GARDENS</a><button class="mb" id="mb" aria-expanded="false" aria-controls="mn">Menu</button></header>
+<div class="mn" id="mn" role="dialog" aria-label="Menu" hidden>
+<div class="mt"><span class="brand">BANYAN GARDENS</span><button class="mb" id="mx">Close</button></div>
+<nav aria-label="Main"><a href="#home"><small>01</small>Home</a><a href="#homes"><small>02</small>Homes</a><a href="#enquire"><small>03</small>Enquire</a></nav>
+<p>Banyan Gardens Estate, Lagos (sample)</p></div>
+
+<main>
+<div data-page="home">
+  <header class="hero pad" id="hero">
+    <svg class="art" viewBox="0 0 600 420" aria-hidden="true"><defs><linearGradient id="lg" x1="0" x2="1"><stop offset="0" stop-color="#CDF564"/><stop offset="1" stop-color="#7FE3B8"/></linearGradient><radialGradient id="sun"><stop offset="0" stop-color="#CDF564" stop-opacity=".55"/><stop offset="1" stop-color="#CDF564" stop-opacity="0"/></radialGradient></defs><circle cx="360" cy="150" r="130" fill="url(#sun)"/><path pathLength="1" d="M40 420V250a110 110 0 0 1 220 0V420"/><path pathLength="1" d="M170 420V190a110 110 0 0 1 220 0V420"/><path pathLength="1" d="M300 420V230a110 110 0 0 1 220 0V420"/><path pathLength="1" d="M0 419.5H600"/></svg>
+    <div class="hc w" style="width:100%">
+      <span class="tag">Gated residential estate &middot; Lagos</span>
+      <h1>Where home feels <span class="gt">settled.</span></h1>
+      <p class="s">Banyan Gardens is planned around security, steady power, and open green space.</p>
+      <div class="row"><a class="btn" href="#enquire">Enquire about a home &rarr;</a><a class="btn g" href="#homes">View homes</a></div>
+    </div>
+    <div class="bar w" style="width:100%">
+      <div><b data-n="120">0</b><span>Planned homes</span></div><div><b data-n="24" data-s="/7">0</b><span>Estate security</span></div><div><b data-n="8">0</b><span>Acres, with green space</span></div><div><b data-n="3">0</b><span>Home layouts</span></div>
+    </div>
+  </header>
+  <div class="mq" aria-hidden="true"><div><span>SECURITY</span><span>&#9679;</span><span>POWER</span><span>&#9679;</span><span>GREEN SPACE</span><span>&#9679;</span><span>ROADS</span><span>&#9679;</span><span>CLUBHOUSE</span><span>&#9679;</span><span>SECURITY</span><span>&#9679;</span><span>POWER</span><span>&#9679;</span><span>GREEN SPACE</span><span>&#9679;</span><span>ROADS</span><span>&#9679;</span><span>CLUBHOUSE</span><span>&#9679;</span></div></div>
+
+  <section class="pad"><div class="w feat">
+    <div><div class="stick rv"><span class="tag" style="color:var(--mut)">The basics</span><h2>Planned around daily life</h2><p style="color:var(--mut);margin:1rem 0 1.6rem">Built in from day one, not added later.</p><a class="btn dk" href="#homes">See the homes &rarr;</a></div></div>
+    <div>
+      <div class="fi rv"><small>01</small><h3>Security</h3><p>Gated entry, perimeter fencing, and trained estate security.</p></div>
+      <div class="fi rv"><small>02</small><h3>Steady power</h3><p>Supply planned into the estate from the start.</p></div>
+      <div class="fi rv"><small>03</small><h3>Roads and drainage</h3><p>Paved internal roads with drainage for the rainy season.</p></div>
+      <div class="fi rv"><small>04</small><h3>Green space</h3><p>Parks and tree-lined streets where children play and neighbours meet.</p></div>
+    </div>
+  </div></section>
+
+  <section class="pad"><div class="w">
+    <div class="hd rv"><h2>Choose your home</h2><p>Three layouts. Swipe to explore.</p></div>
+    <div class="homes rv">
+      <div class="hm"><div class="im"><svg viewBox="0 0 200 120"><path d="M20 110V50h160v60M14 50l86-30 86 30M50 110V80h24v30M110 62h24v18h-24zM146 62h24v18h-24zM8 110h184"/></svg></div><h3>3-bedroom terrace</h3><p>A practical family home with open living space.</p><span class="chip">3 beds</span><span class="chip">Parking</span></div>
+      <div class="hm"><div class="im"><svg viewBox="0 0 200 120"><path d="M15 110V55l45-28 45 28v55M105 110V70l40-22 40 22v40M35 110V85h20v25M125 110V90h20v20M30 62h20v14H30zM75 62h20v14H75zM8 110h184"/></svg></div><h3>4-bedroom semi-detached</h3><p>Extra room for a home office, plus a private garden.</p><span class="chip">4 beds</span><span class="chip">Garden</span></div>
+      <div class="hm"><div class="im"><svg viewBox="0 0 200 120"><path d="M20 110V60h60V35l50-22 50 22v75M20 60l30-22 30 22M45 110V85h22v25M110 60h28v22h-28zM150 60h28v22h-28zM8 110h184"/></svg></div><h3>5-bedroom detached</h3><p>Our largest layout, on a standalone plot.</p><span class="chip">5 beds</span><span class="chip">Standalone</span></div>
+    </div>
+  </div></section>
+
+  <section class="life pad"><div class="w" style="padding-top:clamp(3.5rem,9vw,6rem)">
+    <div class="hd rv"><h2>Life inside the estate</h2><p>Planned amenities for everyday living.</p></div>
+    <div class="ll rv"><a href="#enquire">Clubhouse<small>Meetings and events</small></a><a href="#enquire">Fitness trail<small>Open-air equipment</small></a><a href="#enquire">Play area<small>Safe and fenced</small></a><a href="#enquire">Convenience shop<small>Everyday items</small></a></div>
+  </div></section>
+
+  <section class="pad"><div class="w">
+    <div class="hd rv"><h2>How buying works</h2></div>
+    <div class="tl rv">
+      <div><h3>Enquire</h3><p>Tell us which home interests you.</p></div>
+      <div><h3>Visit the site</h3><p>Walk the estate and see the plots.</p></div>
+      <div><h3>Choose a home</h3><p>Pick a layout and a payment plan.</p></div>
+      <div><h3>Move in</h3><p>We hand over the keys and the documents.</p></div>
+    </div>
+  </div></section>
+
+  <section class="pad"><div class="w">
+    <div class="hd rv"><h2>What early buyers say</h2><p>Sample reviews for this concept design.</p></div>
+    <div class="qs">
+      <blockquote class="rv">The site visit answered every question I had. No pressure, just clear information.<cite>Tunde, Lagos</cite></blockquote>
+      <blockquote class="rv">We liked the green space and the gate security. It feels safe for the children.<cite>Ngozi and Ade</cite></blockquote>
+      <blockquote class="rv">The payment plan made it possible for us to buy now instead of waiting.<cite>Kemi, Ajah</cite></blockquote>
+    </div>
+  </div></section>
+
+  <section class="pad"><div class="w" style="max-width:48rem">
+    <div class="hd rv"><h2>Questions buyers ask</h2></div>
+    <div class="rv">
+      <details><summary>Can I visit before I decide?</summary><p>Yes. Send an enquiry and we will arrange a visit at a time that suits you.</p></details>
+      <details><summary>Is there a payment plan?</summary><p>Ask our sales team about the plans for each home type.</p></details>
+      <details><summary>What documents come with the property?</summary><p>Our team walks you through the title and survey documents before you commit.</p></details>
+      <details><summary>When can I move in?</summary><p>Handover depends on the home and the stage of construction. We confirm it with you.</p></details>
+    </div>
+  </div></section>
+
+  <section class="pad"><div class="w"><div class="cta rv"><h2>Come and see it for yourself.</h2><a class="btn" href="#enquire">Enquire about a home &rarr;</a></div></div></section>
+</div>
+
+<div data-page="homes" hidden>
+  <div class="pad sub"><div class="w">
+    <h1>The homes</h1><p class="lead">Three layouts for different households. Prices and availability on request.</p>
+    <div class="hr rv"><div class="im"><svg viewBox="0 0 200 120"><path d="M20 110V50h160v60M14 50l86-30 86 30M50 110V80h24v30M110 62h24v18h-24zM146 62h24v18h-24zM8 110h184"/></svg></div><div><h3>3-bedroom terrace</h3><p>A practical family home with an open living area and private parking.</p><a class="btn dk" href="#enquire">Enquire &rarr;</a></div></div>
+    <div class="hr rv"><div class="im"><svg viewBox="0 0 200 120"><path d="M15 110V55l45-28 45 28v55M105 110V70l40-22 40 22v40M35 110V85h20v25M125 110V90h20v20M30 62h20v14H30zM75 62h20v14H75zM8 110h184"/></svg></div><div><h3>4-bedroom semi-detached</h3><p>Extra space for a home office, with a private garden.</p><a class="btn dk" href="#enquire">Enquire &rarr;</a></div></div>
+    <div class="hr rv"><div class="im"><svg viewBox="0 0 200 120"><path d="M20 110V60h60V35l50-22 50 22v75M20 60l30-22 30 22M45 110V85h22v25M110 60h28v22h-28zM150 60h28v22h-28zM8 110h184"/></svg></div><div><h3>5-bedroom detached</h3><p>Our largest layout, on a standalone plot with outdoor space.</p><a class="btn dk" href="#enquire">Enquire &rarr;</a></div></div>
+  </div></div>
+</div>
+
+<div data-page="enquire" hidden>
+  <div class="pad sub"><div class="w">
+    <h1>Enquire</h1><p class="lead">Tell us which home you are interested in and we will get back to you.</p>
+    <div class="bk">
+      <div>
+        <form id="rf">
+          <label for="n">Name</label><input id="n" required autocomplete="name">
+          <label for="p">Phone number</label><input id="p" type="tel" required autocomplete="tel">
+          <label for="h">Interested in</label><select id="h"><option>3-bedroom terrace</option><option>4-bedroom semi-detached</option><option>5-bedroom detached</option><option>Not sure yet</option></select>
+          <label for="m">Message</label><textarea id="m" rows="3"></textarea>
+          <p style="margin-top:1.4rem"><button class="btn" type="submit">Send enquiry &rarr;</button></p>
+        </form>
+        <p id="sent" role="status" hidden>Enquiry received. This is a demo, so nothing was sent. On a live site it would go to the sales team by WhatsApp or email.</p>
+      </div>
+      <div class="info"><h3>Visit the site</h3><p>Banyan Gardens Estate, Lagos (sample)</p><p>Site visits by appointment, Monday to Saturday.</p><p>We reply to every enquiry within the working day.</p></div>
+    </div>
+  </div></div>
+</div>
+</main>
+
+<footer class="pad ft"><div class="w"><div class="wm" aria-hidden="true">BANYAN</div><div class="fr2"><span>Banyan Gardens Estate, Lagos (sample)</span><span>Concept design. Not a real estate development.</span></div></div></footer>
+
+<script>
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var pages=[].slice.call(document.querySelectorAll('[data-page]'));
+function count(el){
+  var to=+el.dataset.n,suf=el.dataset.s||'',t0=null;
+  if(reduce){el.textContent=to+suf;return}
+  function step(t){if(!t0)t0=t;var p=Math.min((t-t0)/1300,1);el.textContent=Math.round(to*(1-Math.pow(1-p,3)))+suf;if(p<1)requestAnimationFrame(step)}
+  requestAnimationFrame(step);
+}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){
+  if(e.isIntersecting){e.target.classList.add('in');if(e.target.dataset.n)count(e.target);[].forEach.call(e.target.querySelectorAll('[data-n]'),count);io.unobserve(e.target)}
+})},{threshold:.12});
+function watch(){[].forEach.call(document.querySelectorAll('.rv:not(.in),.bar'),function(el){io.observe(el)})}
+function route(){
+  var id=(location.hash||'#home').slice(1);
+  if(!pages.some(function(p){return p.dataset.page===id})){id='home'}
+  pages.forEach(function(p){p.hidden=p.dataset.page!==id});
+  [].forEach.call(document.querySelectorAll('.mn nav a'),function(a){
+    if(a.getAttribute('href')==='#'+id){a.setAttribute('aria-current','page')}else{a.removeAttribute('aria-current')}
+  });
+  window.scrollTo(0,0);watch();closeMenu();
+}
+addEventListener('hashchange',route);route();
+var hero=document.getElementById('hero');
+hero.addEventListener('pointermove',function(e){var r=hero.getBoundingClientRect();hero.style.setProperty('--mx',(e.clientX-r.left)+'px');hero.style.setProperty('--my',(e.clientY-r.top)+'px')});
+document.getElementById('rf').addEventListener('submit',function(e){e.preventDefault();document.getElementById('sent').hidden=false});
+
+var mn=document.getElementById('mn'),mb=document.getElementById('mb');
+function closeMenu(){if(!mn)return;mn.hidden=true;mb.setAttribute('aria-expanded','false');document.body.style.overflow=''}
+function openMenu(){mn.hidden=false;mb.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';document.getElementById('mx').focus()}
+mb.addEventListener('click',openMenu);
+document.getElementById('mx').addEventListener('click',function(){closeMenu();mb.focus()});
+addEventListener('keydown',function(ev){if(ev.key==='Escape'&&!mn.hidden){closeMenu();mb.focus()}});
+mn.addEventListener('click',function(ev){if(ev.target.closest('nav a'))closeMenu()});
+route();
+</script>
+</body>
+</html>
